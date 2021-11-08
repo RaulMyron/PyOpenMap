@@ -46,7 +46,7 @@ dicionario_geral = {} #com tudo
 for contador in range(len(list_dict_data)):
     
     try: #aqui ele vai tentar achar os que tem hospital e filtrar para um só dicionario, mesma coisa com os demais para usas tags
-        if(list_dict_data[contador]["data"]["tag"]["amenity"]=="hospital")
+        if(list_dict_data[contador]["data"]["tag"]["amenity"]=="hospital"):
             
             #1 - se quiser que o id seja o id no openmap //tbm pode ser o uid
             #dicionario_hospitais[list_dict_data[contador]["data"]["id"]] = list_dict_data[contador]["data"]
@@ -161,7 +161,7 @@ while True:
     
     if(baixar == "2"):
         pass
-    elif(baixar == "1"): #aqui ele gera um arquivo de texto com a pesquisa do usuario
+    elif(baixar == "1"): #aqui ele gera um arquivo de texto com a pesquisa do
         with open('pesquisa.txt', 'w', encoding='utf-8') as arquivo:
             contando = 0
             for elemento in lista_baixar:
@@ -209,4 +209,5 @@ with open('listas_objetos.txt', 'w', encoding='utf-8') as f:
      for element in list_dict_data:
          f.write(str(element))
          f.write('\n\n')
+
 
